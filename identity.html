@@ -402,91 +402,43 @@
               <carousel-3d :autoplay="false" :display="3" :height="640" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" @after-slide-change="onAfterSlideChange" @before-slide-change="onBeforeSlideChange"
                 @last-slide="onLastSlide">
                 <slide :index="0">
-                  <video controls poster="identity/ui/video/entrepreneurship/cherry-lam.jpg" id="testi-vd0">
-                    <source src="identity/ui/video/entrepreneurship/cherry-lam.mp4" type="video/mp4">
+                  <video controls poster="identity/ui/video/sustainability/kristie-wong.jpg" id="testi-vd0">
+                    <source src="identity/ui/video/sustainability/kristie-wong.mp4" type="video/mp4">
                   </video>
                   <div class="label">
-                    Cherry Lam
+                    Kristie Wong
                   </div>
                 </slide>
                 <slide :index="1">
-                  <video controls poster="identity/ui/video/entrepreneurship/kira-chan.jpg" id="testi-vd1">
-                    <source src="identity/ui/video/entrepreneurship/kira-chan.mp4" type="video/mp4">
+                  <video controls poster="identity/ui/video/sustainability/pauline-yu.jpg" id="testi-vd1">
+                    <source src="identity/ui/video/sustainability/pauline-yu.mp4" type="video/mp4">
                   </video>
                   <div class="label">
-                    Kira Chan
+                    Pauline Yu
                   </div>
                 </slide>
                 <slide :index="2">
-                  <video controls poster="identity/ui/video/entrepreneurship/wencylung.jpg" id="testi-vd2">
-                    <source src="identity/ui/video/entrepreneurship/wencylung.mp4" type="video/mp4">
+                  <video controls poster="identity/ui/video/sustainability/racy-cs.jpg" id="testi-vd2">
+                    <source src="identity/ui/video/sustainability/racy-cs.mp4" type="video/mp4">
                   </video>
                   <div class="label">
-                    Wency Lung
+                    Tracy
                   </div>
                 </slide>
                 <slide :index="3">
-                  <video controls poster="identity/ui/video/entrepreneurship/cook-chung.jpg" id="testi-vd3">
-                    <source src="identity/ui/video/entrepreneurship/cook-chung.mp4" type="video/mp4">
+                  <video controls poster="identity/ui/video/sustainability/safety-khanisorn.jpg" id="testi-vd3">
+                    <source src="identity/ui/video/sustainability/safety-khanisorn.mp4" type="video/mp4">
                   </video>
                   <div class="label">
-                    Cook Chung
+                    Khanisorn Thongchiew
                   </div>
                 </slide>
                 <slide :index="4">
-                  <video controls poster="identity/ui/video/entrepreneurship/gary-yang.jpg" id="testi-vd4">
-                    <source src="identity/ui/video/entrepreneurship/gary-yang.mp4" type="video/mp4">
+                  <video controls poster="identity/ui/video/sustainability/tw-robin.jpg" id="testi-vd4">
+                    <source src="identity/ui/video/sustainability/tw-robin.mp4" type="video/mp4">
                   </video>
                   <div class="label">
-                    Gary Yang
-                  </div>
-                </slide>
-                <slide :index="5">
-                  <video controls poster="identity/ui/video/entrepreneurship/maline-agm.jpg" id="testi-vd5">
-                    <source src="identity/ui/video/entrepreneurship/maline-agm.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Maline Srun
-                  </div>
-                </slide>
-                <slide :index="6">
-                  <video controls poster="identity/ui/video/entrepreneurship/natalie-chang.jpg" id="testi-vd6">
-                    <source src="identity/ui/video/entrepreneurship/natalie-chang.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Natalie Chang
-                  </div>
-                </slide>
-                <slide :index="7">
-                  <video controls poster="identity/ui/video/entrepreneurship/pheap-sm.jpg" id="testi-vd7">
-                    <source src="identity/ui/video/entrepreneurship/pheap-sm.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Souphornpheap Mean
-                  </div>
-                </slide>
-                <slide :index="8">
-                  <video controls poster="identity/ui/video/entrepreneurship/sovandy-sm.jpg" id="testi-vd8">
-                    <source src="identity/ui/video/entrepreneurship/sovandy-sm.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Sovandy Nang
-                  </div>
-                </slide>
-                <slide :index="9">
-                  <video controls poster="identity/ui/video/entrepreneurship/wencylung.jpg" id="testi-vd9">
-                    <source src="identity/ui/video/entrepreneurship/wencylung.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Wency Lung
-                  </div>
-                </slide>
-                <slide :index="10">
-                  <video controls poster="identity/ui/video/entrepreneurship/eugeniakrasnok.jpg" id="testi-vd10">
-                    <source src="identity/ui/video/entrepreneurship/eugeniakrasnok.mp4" type="video/mp4">
-                  </video>
-                  <div class="label">
-                    Eugenia Krasnok
+                    Robin Feng
                   </div>
                 </slide>
               </carousel-3d>
@@ -884,7 +836,7 @@
 
       el: '#testi-v',
       data: {
-        slides: 11
+        slides: 5
       },
       components: {
         'carousel-3d': Carousel3d.Carousel3d,
@@ -893,7 +845,7 @@
       methods: {
         onAfterSlideChange(index) {
           //$('#testi-vd0').play();
-          for (var i = 0; i <= 10; i++) {
+          for (var i = 0; i <= 3; i++) {
             document.getElementById("testi-vd" + i).pause();
           }
           document.getElementById("testi-vd" + index).play();
