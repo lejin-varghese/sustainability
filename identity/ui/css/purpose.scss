@@ -1451,6 +1451,9 @@ footer {
       @media (max-width: 1024px) {
         flex-basis: 66.5%;
       }
+      @media (max-width: 992px) {
+        flex-basis: 100%;
+      }
       @media (max-width: 767px) {
         flex-basis: 100%;
       }
@@ -1467,6 +1470,7 @@ footer {
         }
       }
       @media (max-width: 992px) {
+        flex-basis: 33.33%;
         .label .quote p {
           font-size: 12px;
         }
