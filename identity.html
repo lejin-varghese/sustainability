@@ -441,6 +441,38 @@
                     Robin Feng
                   </div>
                 </slide>
+                <slide :index="5">
+                  <video controls poster="identity/ui/video/sustainability/bernadette-lim-wei-see.jpg" id="testi-vd5">
+                    <source src="identity/ui/video/sustainability/bernadette-lim-wei-see.mp4" type="video/mp4">
+                  </video>
+                  <div class="label">
+                    Bernadette Lim Wei See
+                  </div>
+                </slide>
+                <slide :index="6">
+                  <video controls poster="identity/ui/video/sustainability/chawakorn-thammason.jpg" id="testi-vd6">
+                    <source src="identity/ui/video/sustainability/chawakorn-thammason.mp4" type="video/mp4">
+                  </video>
+                  <div class="label">
+                    Chawakorn Thammason
+                  </div>
+                </slide>
+                <slide :index="7">
+                  <video controls poster="identity/ui/video/sustainability/ernest-bc-khoo.jpg" id="testi-vd7">
+                    <source src="identity/ui/video/sustainability/ernest-bc-khoo.mp4" type="video/mp4">
+                  </video>
+                  <div class="label">
+                    Ernest BC Khoo
+                  </div>
+                </slide>
+                <slide :index="8">
+                  <video controls poster="identity/ui/video/sustainability/nicolette-wong.jpg" id="testi-vd8">
+                    <source src="identity/ui/video/sustainability/nicolette-wong.mp4" type="video/mp4">
+                  </video>
+                  <div class="label">
+                    Nicolette Wong
+                  </div>
+                </slide>
               </carousel-3d>
             </div>
           </div>
@@ -507,9 +539,9 @@
           <div class="inner">
             <article class="quote">
               <span class="icon"></span>
-              <p>Passion | Self-motivation | Confidence</p>
+              <p>Passion | Self-motivation | Risk tolerance</p>
             </article>
-            <p class="name">Susanne Krischel</p>
+            <p class="name">Thuy Vy Le</p>
             <p class="place">Germany</p>
           </div>
         </div>
@@ -864,7 +896,7 @@
 
       el: '#testi-v',
       data: {
-        slides: 5
+        slides: 9
       },
       components: {
         'carousel-3d': Carousel3d.Carousel3d,
@@ -873,7 +905,7 @@
       methods: {
         onAfterSlideChange(index) {
           //$('#testi-vd0').play();
-          for (var i = 0; i <= 4; i++) {
+          for (var i = 0; i <= 8; i++) {
             document.getElementById("testi-vd" + i).pause();
           }
           document.getElementById("testi-vd" + index).play();
