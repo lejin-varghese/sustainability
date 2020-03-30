@@ -2119,6 +2119,60 @@ footer ul li a {
   }
 }
 
+.winners.entp-winner-g .row .col.first-head {
+  -ms-flex-preferred-size: 56.93%;
+      flex-basis: 56.93%;
+}
+
+@media (max-width: 1024px) {
+  .winners.entp-winner-g .row .col.first-head {
+    -ms-flex-preferred-size: 66.5%;
+        flex-basis: 66.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .winners.entp-winner-g .row .col.first-head {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.winners.entp-winner-g .row .pic.col {
+  -ms-flex-preferred-size: 14.123%;
+      flex-basis: 14.123%;
+}
+
+.winners.entp-winner-g .row .pic.col .label .quote p {
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .winners.entp-winner-g .row .pic.col {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+  .winners.entp-winner-g .row .pic.col .label .quote p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .winners.entp-winner-g .row .pic.col .label .quote p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .winners.entp-winner-g .row .pic.col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .winners.entp-winner-g .row .pic.col .label .quote p {
+    font-size: 18px;
+  }
+}
+
 .testi-video {
   position: relative;
   z-index: 101;

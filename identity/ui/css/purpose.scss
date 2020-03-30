@@ -1445,6 +1445,40 @@ footer {
       }
     }
   }
+  &.entp-winner-g {
+    .row .col.first-head {
+      flex-basis: 56.93%;
+      @media (max-width: 1024px) {
+        flex-basis: 66.5%;
+      }
+      @media (max-width: 767px) {
+        flex-basis: 100%;
+      }
+    }
+    .row .pic.col {
+      flex-basis: 14.123%;
+      .label .quote p {
+        font-size: 18px;
+      }
+      @media (max-width: 1024px) {
+        flex-basis: 33.33%;
+        .label .quote p {
+          font-size: 18px;
+        }
+      }
+      @media (max-width: 992px) {
+        .label .quote p {
+          font-size: 12px;
+        }
+      }
+      @media (max-width: 767px) {
+        flex-basis: 100%;
+        .label .quote p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 .testi-video {
